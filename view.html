@@ -1,0 +1,28 @@
+<script language="javascript" type="text/javascript" src="datepicker/WdatePicker.js"></script>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>浏览日报</title>
+</head>
+
+<body>
+<script >
+function index(){
+	 window.open("index.html",'_self') 
+}
+
+</script>
+<p align="center" class="h1"><strong>浏览日报</strong></p>
+<form name="form1" method="post" action="view.php">
+  <span class="h1">时间
+  <label for="date"></label>
+  <input name="date" onClick="WdatePicker()" id ="need_time" type="text" />
+  </span>
+
+  <input type="submit" name="button" id="button" value="确定">
+  <input name="浏览日报" type="reset" value="返回" onclick="index()" />
+</form>
+<p>&nbsp;</p>
+
+</body>
+</html>

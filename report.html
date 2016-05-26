@@ -1,0 +1,44 @@
+<script language="javascript" type="text/javascript" src="datepicker/WdatePicker.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>提交日报</title>
+</head>
+
+<body>
+
+<script >
+function index(){
+	 window.open("index.html",'_self') 
+}
+
+</script>
+	<form action="report.php" method="post" name="add">
+      <p align="center" class="h1">一、当日工作情况</p>
+      <p align="center" class="h2">1.1当日工作所遇问题</p>
+      <div align="center">
+        <textarea name="text_problem" id="t1" cols="60" rows="8"></textarea>
+      </div>
+      <p align="center" class="h2">1.2当日工作内容</p>
+      <div align="center">
+        <textarea name="text_work" id="t2" cols="60" rows="8"></textarea>
+      </div>
+      <p align="center" class="h2">1.3当日工作学习小结（心得）</p>
+      <div align="center">
+        <textarea name="text_conclu" id="t3" cols="60" rows="8"></textarea>
+        <br />
+      </div>
+      <p align="center" class="h1">二、明日工作计划</p>
+      <p align="center">
+        <textarea name="text_projet" id="t4" cols="60" rows="8"></textarea>
+      </p>
+      <p align="center">时间 
+        <label for="date"></label>
+        <input name="date" onClick="WdatePicker()" id ="need_time" type="text"/>
+        <br />
+        <input name="浏览日报" type="reset" value="返回" onclick="index()" />
+        <input name="浏览日报" type="reset" value="重置"  />
+        <input name="浏览日报" type="submit" value="提交" />
+      </p>
+</form>
+</body>
+</html>
